@@ -1,4 +1,6 @@
 import React from 'react'
+import moment from 'moment'
+
 
 
 const ProjectSummary = (props) => {
@@ -7,7 +9,7 @@ const ProjectSummary = (props) => {
         <div className="card-content grey-text text-darken-3">
         <span className='card-title'>{props.project.title}</span>
         <p> posted By {props.project.authorFirstName} {props.project.authorLastName}</p>
-        <p className='grey-text'>Today</p>
+        <p className='grey-text'>{moment(props.project.createdAt.toDate()).calendar()}</p>
  
 </div>
 </div>
