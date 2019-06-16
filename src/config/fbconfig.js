@@ -6,6 +6,7 @@
  
  // Your web app's Firebase configuration
   var firebaseConfig = {
+    userProfile: 'users',
     apiKey: "AIzaSyDEmnZj7ESlEXtptOoKCx7xrRmYvzRdjmE",
     authDomain: "project-management-3805b.firebaseapp.com",
     databaseURL: "https://project-management-3805b.firebaseio.com",

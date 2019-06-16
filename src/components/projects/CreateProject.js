@@ -19,6 +19,7 @@ import { Redirect } from 'react-router-dom'
      handleSubmit = e => {
          e.preventDefault()
         this.props.createProject(this.state)
+        this.props.history.push('/')
      }
 
     render() {
